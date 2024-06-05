@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduce</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.28.0/fns.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4d33c2ea6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>
+          <a href="index.html" class="on">
+            <i class="fas fas fa-user-tie"></i> 윤정훈의 개인프로젝트
+          </a>
+        </h1>
+        <ul id="gnb">
+          <li><a href="contact.html">연락처</a></li>
+          <li><a href="affiliation.html">소속</a></li>
+          <li><a href="certification.html">자격증</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <figure>
+      <article>
+        <img src="/img/portrait.jpg" alt="메인 사진" class="profile_img" />
+        <p>by Acorn Caricature 인사점</p>
+      </article>
+
+      <div class="info">
+        <ul>
+          <!-- <li>Hello!</li> -->
+          <li>안녕하세요!</li>
+          <li>🎊🎊🎊제 개인프로젝트 페이지에 오신걸 환영해요!🎊🎊🎊</li>
+          <li>제 이름은 윤정훈이에요,</li>
+          <!-- <li>I am JeongHoon Yun</li> -->
+          <li>지금은 광운대학교 정보융합학부 2학년 재학중이에요</li>
+          <!-- <li>
+            I am currently a sophomore studying Information Convergence at
+            Kwangwoon University
+          </li> -->
+          <li>자기소개 페이지 개발을 실습하고 있어요</li>
+          <li>꼭 훌륭한 개발자가 되고 싶어요</li>
+          <!-- <li>
+            I'm practicing developing a self-introduction page
+            <i class="far fa-smile"></i>
+          </li> -->
+        </ul>
+      </div>
+    </figure>
+    <section>
+      <div class="photo-container">
+        <div class="photo-wrapper">
+          <img src="/img/football.jpg" alt="Image 1" />
+          <div class="details">
+            <h1>취미</h1>
+            <!-- <p>This is the first image.</p> -->
+            <button class="toggle-details">자세히 보기</button>
+            <div class="info" style="display: none">
+              다소 격한 취미인 축구입니다 <br />현재는 성북구보라매축구회
+              <br />소속으로 매주 운동하고 있습니다
+            </div>
+          </div>
+        </div>
+        <div class="photo-wrapper">
+          <img src="/img/food.jpg" alt="Image 2" />
+          <div class="details">
+            <h1>음식</h1>
+            <!-- <p>This is the second image.</p> -->
+            <button class="toggle-details">자세히 보기</button>
+            <div class="info" style="display: none">
+              가장 좋아하는 음식점인 <br />성신여대역 라라면가입니다
+              <br />(메뉴: 마라곱창탕면)
+            </div>
+          </div>
+        </div>
+        <div class="photo-wrapper">
+          <img src="/img/hometown.jpg" alt="Image 3" />
+          <div class="details">
+            <h1>고향</h1>
+            <!-- <p>This is the third image.</p> -->
+            <button class="toggle-details">자세히 보기</button>
+            <div class="info" style="display: none">
+              학창시절때부터 자라온 동네인 <br />보문입니다
+            </div>
+          </div>
+        </div>
+        <div class="photo-wrapper">
+          <img src="/img/winter.jpg" alt="Image 4" />
+          <div class="details">
+            <h1>계절</h1>
+            <!-- <p>This is the fourth image.</p> -->
+            <button class="toggle-details">자세히 보기</button>
+            <div class="info" style="display: none">
+              사계절 중 가장 좋아하는 계절인 <br />눈 내린 겨울입니다 <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <guestbook>
+      <div class="container">
+        <h1>방명록</h1>
+
+        <input type="text" class="todo-input" placeholder="작성자: 내용" />
+
+        <div class="time-display"></div>
+        <div class="todos-container">
+          <div class="todo-item">
+            할 일1
+            <button class="delete-btn">x</button>
+          </div>
+          <div class="todo-item">
+            할 일2
+            <button class="delete-btn">x</button>
+          </div>
+          <div class="todo-item">
+            할 일3
+            <button class="delete-btn">x</button>
+          </div>
+          <div class="todo-item">
+            할 일4
+            <button class="delete-btn">x</button>
+          </div>
+        </div>
+      </div>
+    </guestbook>
+    <script src="/js/introduce.js"></script>
+  </body>
+</html>
